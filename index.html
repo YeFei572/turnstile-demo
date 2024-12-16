@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src=" https://challenges.cloudflare.com/turnstile/v0/api.js" async defer>
+    </script>
+
+    <style>
+        .cf-turnstile {
+            margin: 0 auto;
+            display: inline-block;
+            width: 304px;
+            height: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 在表单或需要验证的地方添加 -->
+    <div class="cf-turnstile" data-sitekey="0x4AAAAAAA2S0KJRsUCYZu0L" data-theme="light">
+    </div>
+
+    <!-- JavaScript验证代码 -->
+    <script>
+        function onSubmit(token) {
+            // 验证通过后的处理逻辑
+            console.log('Verification passed');
+        }
+    </script>
+</body>
+
+</html>
